@@ -103,22 +103,20 @@
 
         }
 
+
         .circle {
-            border: 2px solid black;
-            height: 200px;
-            width: 200px;
-            display: flex;
-
-            justify-content: center;
-            align-items: center;
-            float: left;
-            border-radius: 100%;
-            background: goldenrod;
-            margin: 60px;
-            margin-left: 100px;
-            margin-top: 10px;
-        }
-
+      border: 2px solid black;
+      height: 200px;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: left;
+      border-radius: 100%;
+      background: goldenrod;
+      margin: 60px;
+      margin-top: 10px;
+    }
         /* about us */
         .main {
 
@@ -262,17 +260,26 @@
         }
 
         /* contact */
-        .footer {
-            color: white;
-            background: plum;
+        #footer {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
             height: 100px;
             margin-top: -5px;
-            font-size: 25px;
-        }
+        background-color: plum;
+        height: 100px;
+        
+      } 
+
+      #footer > p {
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 25px;    
+      }
     </style>
 
     <body>
@@ -384,13 +391,23 @@
             </div>
 
 
-
-            <div class="footer">
-
-                "Website template for Practical-8 © 
-                <a href="https://www.beta-labs.in/">Beta-Labs</a>
-                <a href="#top">Back to top</a>
-            </pre>
+<!-- <div class="footer">
+<p>
+    
+    ""Website template for Practical-8 ©"
+    <a href="https://www.beta-labs.in/">Beta-Labs</a>
+    
+</p>
+   <p>
+    <a href="#top">Back to top</a>
+</p> -->
+            
+<div id="footer">
+    <p>"Website Template for Practical-8 ©"
+    <a href="https://beta-labs.in">Beta-labs</a>
+    <br><br><a href="#top">Back to top</a>
+    </p>
+</div>
     </body>
 
 </html>
