@@ -1,146 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-<style>
-    *{
-        padding: 0;
-        margin: 0;
-          box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-       /* navbar */
-    .navbar{
-       position: fixed;
-      display: flex;
-     align-items: center;
-     top:0px;
-        background: grey;
-        height: 60px;
-        width: 100%;
-    }
-    .navbar ul{
-        margin-right: 20px;
-    }
-    .navbar ul li{ 
-        display:inline; 
-        list-style: none;
-        font-size: 20px;
-        text-align: center;
-        margin-top: 10px;
-        
-        
-    }
-    .navbar ul li a{
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-        margin: 30px;
-    }
-    .navbar ul li a:hover {
-        color: black;
-        background-color: white;
-      }
-      /* banner */
-    .banner {
-      color:black;
-      margin-top: 10px;
-      font-size: 35px;
-    height:500px ;
-      display: flex;
-         background-image: url(./image/main.jpg); 
-       background-size: cover;
-       background-position: center;
-    }
-    
-    .heading h1 {
-      text-align: center;
-      color: black;
-      font-size: 50px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-    .circle {
-      border: 2px solid black;
-      height: 200px;
-      width: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      float: left;
-      border-radius: 100%;
-      background: goldenrod;
-      margin: 60px;
-      margin-top: 10px;
-    }
-    /* about us */
-    .main {
-      height: 400px;
-      width: 500px;
-      background: gray;
-      display: flex;
-      color: white;
-      float: left;
-    }
-    .main h4{
-        /* text-align: left; */
-        font-size: 30px;
-        margin-top: 10px;
-    }
-    .main p{
-       font-size: 30px;
-    }
-    #right {
-      width: 60%;
-      float: right;
-    }
-   .article {
-      border: 2px solid black;
-      color:black;
-      margin-bottom: 15px;
-      display: flex; 
-      height: 120px;
-      text-align: center;
-    }
-    #p1 {
 
-        background-image: url(./image/article1.jpg);
-        background-size: cover;
-    background-repeat: no-repeat;
- 
-}
-#p1 h2{
-    text-align: center;
-}
-#p2 {
+    <style>
+        * {
 
-background-image: url(./image/article2.jpg);
-background-size: cover;
-background-repeat: no-repeat;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-}
-#p3{
+        /* navbar */
+        .navbar {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            top: 0px;
+            background: grey;
+            height: 60px;
+            width: 100%;
+        }
 
-background-image: url(./image/article3.jpg);
-background-size: cover;
- background-repeat: no-repeat;
-}
-/* Technologies Used */
-.tech h1{
-        text-align: center;
-      color: black;
-      font-size: 50px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    
-    }
-    .square {
+        .navbar ul {
+            margin-left: 300px;
+
+        }
+
+        .navbar ul li {
+            display: inline;
+            list-style: none;
+            font-size: 25px;
+
+            margin-top: 10px;
+
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            margin: 30px;
+        }
+
+        .navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        /* banner */
+        .banner {
+            color: white;
+            padding-top: 100px;
+            font-size: 60px;
+            padding-left: 30px;
+            font-weight: bold;
+            height: 650px;
+            display: flex;
+            background-image: url(./image/main.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .heading h1 {
+            text-align: center;
+            color: black;
+            
+            font-size:45px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+
+        }
+
+        .headingtech h1 {
+
+            color: black;
+            font-size: 45px;
+
+            margin-left: 550px;
+            margin-bottom:10px;
+
+
+        }
+
+        .headingcont h1 {
+
+            color: black;
+            font-size: 45px;
+            float: left;
+            margin-left: 678px;
+           
+            margin-bottom:10px;
+
+        }
+
+        .circle {
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            float: left;
+            border-radius: 100%;
+            background: goldenrod;
+            margin: 60px;
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+
+        /* about us */
+        .main {
+
+            margin-left: 30px;
+            color: white;
+            float: left;
+            width: 45%;
+            height: 550px;
+            background-color: gray;
+            float: left;
+            color: #fff;
+        }
+
+        .main h2 {
+            /* text-align: left; */
+            font-size: 30px;
+            margin-top: 15px;
+            width: -1px;
+            margin-left: 20px;
+
+
+        }
+
+        .main p {
+            font-size: 25px;
+            margin-top: 25px;
+            margin-left: 15px;
+
+        }
+
+        #right {
+            width: 50%;
+            float: right;
+            margin-right: 30px;
+        }
+
+        .article {
+            border: 1px solid black;
+            color: black;
+            margin-bottom: 15px;
+            display: flex;
+            height: 172px;
+            justify-content: center;
+            font-size: 24px;
+
+        }
+
+        #p1 {
+
+            background-image: url(./image/article1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        #p1 h2 {
+            text-align: center;
+        }
+
+        #p2 {
+
+            background-image: url(./image/article2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        #p3 {
+
+            background-image: url(./image/article3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* Technologies Used */
+        .tech h1 {
+            text-align: center;
+            color: black;
+            font-size: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+
+        }
+
+        .square {
+
+            width: 260px;
+
+            float: left;
+
+            margin: 40px;
+            margin-top: 10px;
+            margin-left: 150px;
+            margin-right: -90px;
+
+            background: grey;
+        }
+        .square {
       width: 260px;
        float: left;
       margin: 40px;
@@ -149,143 +226,171 @@ background-size: cover;
     
      background: grey;
     }
- .square img {
-    width: 260px;
-    height:200px ;
-    margin-bottom: 10px; 
-}
-.square h4 {
-    margin: 0px 10px;
-    text-align: center;
-}
-.square p {
-    margin: 10px;
-    font-size: 15px;
-    text-align: justify;
-    line-height: 25px;
-    
-} 
-.square  a {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    color: #fff;
-    background-color: red;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 8px;
-}
-.square a:hover{
-    background-color: blue;
-}
-/* contact */
-.footer {
-      color: white;
-      background: plum ;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height:100px;
-      margin-top: -5px;
-      font-size: 25px;
-}
-      </style>
-  <body>
-    <div class="navbar" >
-        <ul >
-            <li> <a href="">Home</a></li>
-            <li> <a href="">About</a></li>
-            <li> <a href="">Team</a></li>
-            <li> <a href="">Technologies</a></li>
-            <li> <a href="">Contact</a></li>
-    </div>
-    <div class="banner">
-        Practical 8
+
+        .square img {
+            width: 260px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .square h4 {
+            margin: 0px 10px;
+            text-align: center;
+        }
+
+        .square p {
+            margin: 10px;
+            font-size: 15px;
+            text-align: justify;
+            line-height: 25px;
+
+        }
+
+        .square a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            background-color: red;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .square a:hover {
+            background-color: blue;
+        }
+
+        /* contact */
+        .footer {
+            color: white;
+            background: plum;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            margin-top: -5px;
+            font-size: 25px;
+        }
+    </style>
+
+    <body>
+        <a id="top"></a>
+        <div class="navbar">
+            <ul>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#circle-container">Team</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#contact">Contact</a></li>
+        </div>
+        <div class="banner">
+            PRACTICAL 8
+        </div>
+        <div>
+            <a id="circle-container"></a>
+        </div>
+        <div class="heading">
+            
+            <h1>Team Members</h1>
+        </div>
+        <div class="circle">
+            <img src="./image/team1.png" alt="team Member">
+        </div>
+        <div class="circle">
+            <img src="./image/team2.png" alt="team Member">
+        </div>
+        <div class="circle">
+            <img src="./image/team3.png" alt="team Member">
+        </div>
+        <div class="circle">
+            <img src="./image/team4.png" alt="team Member">
+        </div>
         
-    </div>
-    <div class="heading">
-      <h1>Team Members</h1>
-    </div>
-    <div class="circle">
-        <img src="./image/team1.png" alt="team Member" >
-    </div>
-    <div class="circle">
-        <img src="./image/team2.png" alt="team Member" >
-    </div>
-    <div class="circle">
-        <img src="./image/team3.png" alt="team Member" >
-    </div>
-    <div class="circle">
-        <img src="./image/team4.png" alt="team Member" >
-    </div>
-    <div class="heading">
-        <h1>About Us</h1>
-      </div>
-      <div class="main">
-          <h4>About Project</h4>
-          <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate exercitationem recusandae odio veritatis placeat tempore delectus vero repudiandae fuga nemo beatae labore deleniti, aperiam saepe nobis deserunt ducimus alias?
-          </p>
-     </div>
-     <div id="right">
-        <div class="article" id="p1">
-            <h2>Project-1</h2>
-           </div>
-        <div class="article" id="p2"> 
-            <h2>Project-2</h2>
+        <div class="heading">
+            <a id="about"></a>
+            <h1>About Us</h1>
+            
+        </div>
+        
+        <div class="main">
+            <h2>
+                About Projects</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate exercitationem recusandae odio
+                veritatis placeat tempore delectus vero repudiandae fuga nemo beatae labore deleniti, aperiam saepe
+                nobis deserunt ducimus alias?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit praesentium atque beatae quibusdam deserunt saepe dolor possimus repellendus, perspiciatis vel ipsa excepturi expedita autem, assumenda nostrum a non ab!
+            </p>
+        </div>
+        <div id="right">
+            <div class="article" id="p1">
+                <h2>Project-1</h2>
             </div>
-        <div class="article" id="p3">
-            <h2>Project-3</h2>
-      </div>
-      </div>
+            <div class="article" id="p2">
+                <h2>Project-2</h2>
+            </div>
+            <div class="article" id="p3">
+                <h2>Project-3</h2>
+            </div>
+        </div>
+        
+        <div class="headingtech">
+            
+            <h1>Technologies Used</h1>
+            <a id="technologies"></a>
+            <div class="square">
+                <img src="./image/html.png" alt="HTML">
+                <h4>Introduction to HTML</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+                    illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
+                    recusandae consequuntur!
+                </p>
+                <a href="./HTML.html">Read More</a>
+            </div>
 
-      <div class="square">
-        <img src="./image/html.png" alt ="HTML">
-        <h4>Introduction to HTML</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
-            illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
-            recusandae consequuntur!
-          </p>
-          <a href="./HTML.html">Read More</a>
-    </div>
+            <div class="square">
+                <img src="./image/css.png" alt="css">
+                <h4>Introduction to CSS</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+                    illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
+                    recusandae consequuntur!</p>
+                <a href="./pages/CSS.html">Read More</a>
+            </div>
+            <div class="square">
 
-<div class="square">
-        <img src="./image/css.png" alt="css">
-        <h4>Introduction to CSS</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
-            illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
-            recusandae consequuntur!</p>
-             <a href="./pages/CSS.html">Read More</a>
-</div>
-<div class="square">
+                <img src="./image/jquery.png" alt="jquery">
+                <h4>Introduction to Jquery</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+                    illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
+                    recusandae consequuntur!</p>
+                <a href="./pages/Jquery.html">Read More</a>
+            </div>
+            <div class="square">
+                <img src="./image/bootstrap.jpg" alt="bootstrap">
+                <h4>Introduction to Bootsrtap</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+                    illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
+                    recusandae consequuntur!
+                </p>
+                <a href="./pages/Bootsrtap.html">Read More</a>
 
-        <img src="./image/jquery.png" alt="jquery">
-        <h4>Introduction to Jquery</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
-            illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
-            recusandae consequuntur!</p>
-             <a href="./pages/Jquery.html">Read More</a>
-</div>
-<div class="square">
-        <img src="./image/bootstrap.jpg" alt="bootstrap">
-        <h4>Introduction to Bootsrtap</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
-            illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
-            recusandae consequuntur!
-        </p>
-             <a href="./pages/Bootsrtap.html">Read More</a>
-    
-</div>
-
-<div class="heading">
-    <h1>Contact</h1>
-</div>
+            </div>
+            <a id="contact"></a>
+            <div class="headingcont">
+                <h1>Contact</h1>
+            </div>
 
 
-<div class="footer">
 
-"Website template for Practical 8  ©" <a href="https://www.beta-labs.in/">Beta-Labs</a>
-</body>
+            <div class="footer">
+
+                "Website template for Practical-8 © 
+                <a href="https://www.beta-labs.in/">Beta-Labs</a>
+                <a href="#top">Back to top</a>
+            </pre>
+    </body>
+
 </html>
