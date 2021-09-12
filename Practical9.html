@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" >
+    <title>Document</title>
+</head>
+<style>
+    
+    * {
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+#header {
+background-color: grey;
+width: 100%;
+height: 70px;
+position: fixed;
+top: 0;
+height: 70px;
+}
+
+/* Navigation Menu  */
+.menu {
+list-style: none;
+float: right;
+}
+
+.menu li {
+display: inline-block;
+line-height: 70px;
+}
+
+.menu li a {
+transition: 0.4s;
+display: block;
+text-decoration: none;
+color: white;
+padding: 0px 35px;
+font-size: 25px;
+text-transform: uppercase;
+}
+
+.menu li a:hover {
+color: black;
+background-color: white;
+}
+
+.show-btn,
+.hide-btn,#chk{
+font-size: 30px;
+line-height: 70px;
+color: white;
+display: none;
+float: right;
+padding-right: 20px;
+}
+
+/* banner */
+.banner {
+color: white;
+padding-top: 100px;
+font-size: 60px;
+padding-left: 30px;
+font-weight: bold;
+height: 650px;
+display: flex;
+background-image: url(./image/main.jpg);
+background-size: cover;
+background-position: center;
+}
+
+.heading h1 {
+text-align: center;
+color: black;
+
+font-size:45px;
+margin-top: 5px;
+margin-bottom: 20px;
+
+}
+
+.headingtech h1 {
+
+color: black;
+font-size: 45px;
+
+margin-left: 550px;
+margin-bottom:10px;
+
+
+}
+
+.headingcont h1 {
+
+color: black;
+font-size: 45px;
+float: left;
+margin-left: 678px;
+
+margin-bottom:10px;
+
+}
+
+
+.circle {
+border: 2px solid black;
+height: 200px;
+width: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+float: left;
+border-radius: 100%;
+background: goldenrod;
+margin: 60px;
+margin-top: 10px;
+}
+/* about us */
+.main {
+
+margin-left: 30px;
+color: white;
+float: left;
+width: 45%;
+height: 550px;
+background-color: gray;
+float: left;
+color: #fff;
+}
+
+.main h2 {
+/* text-align: left; */
+font-size: 30px;
+margin-top: 15px;
+width: -1px;
+margin-left: 20px;
+
+
+}
+
+.main p {
+font-size: 25px;
+margin-top: 25px;
+margin-left: 15px;
+
+}
+
+#right {
+width: 50%;
+float: right;
+margin-right: 30px;
+}
+
+.article {
+border: 1px solid black;
+color: black;
+margin-bottom: 15px;
+display: flex;
+height: 172px;
+justify-content: center;
+font-size: 24px;
+
+}
+
+#p1 {
+
+background-image: url(https://github.com/NandiniAgrawal17/FullStack_Practical/blob/master/image/article1.jpg?raw=true);
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+#p1 h2 {
+text-align: center;
+}
+
+#p2 {
+
+background-image: url(https://github.com/NandiniAgrawal17/FullStack_Practical/blob/master/image/article2.jpg?raw=true);
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+#p3 {
+
+background-image: url(https://github.com/NandiniAgrawal17/FullStack_Practical/blob/master/image/article3.jpg?raw=true);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+/* Technologies Used */
+.tech h1 {
+text-align: center;
+color: black;
+font-size: 50px;
+margin-top: 10px;
+margin-bottom: 10px;
+
+
+}
+
+.square {
+
+width: 260px;
+
+float: left;
+
+margin: 40px;
+margin-top: 10px;
+margin-left: 150px;
+margin-right: -90px;
+
+background: grey;
+}
+.square {
+width: 260px;
+float: left;
+margin: 40px;
+margin-top: 10px;
+margin-right: 25px;
+
+background: grey;
+}
+
+.square img {
+width: 260px;
+height: 150px;
+margin-bottom: 10px;
+}
+
+.square h4 {
+margin: 0px 10px;
+text-align: center;
+}
+
+.square p {
+margin: 10px;
+font-size: 15px;
+text-align: justify;
+line-height: 25px;
+
+}
+
+.square a {
+display: block;
+margin: 0 auto;
+text-align: center;
+color: #fff;
+background-color: red;
+text-decoration: none;
+padding: 10px;
+border-radius: 10px;
+}
+
+.square a:hover {
+background-color: blue;
+}
+
+/* contact */
+#footer {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100px;
+margin-top: -5px;
+background-color: plum;
+height: 100px;
+
+} 
+
+#footer > p {
+font-size: 16px;
+color: black;
+text-align: center;
+padding: 20px;
+font-weight: bold;
+font-size: 25px;    
+}
+
+/* 1. First Break-point */
+/* 801px - 1199px */
+
+/* 1. First Break-point */
+/* 801px - 1199px */
+
+@media (min-width: 801px) and (max-width: 1199px) {
+.menu {
+list-style: none;
+float: right;
+}
+
+.menu li {
+line-height: 70px;
+display: inline-block;
+}
+
+.menu li a {
+display: block;
+text-decoration: none;
+color: white;
+padding: 0px 20px;
+font-size: 20px;
+text-transform: uppercase;
+}
+
+.menu li a:hover {
+color: black;
+background-color: white;
+}
+.show-btn,
+.hide-btn,
+#chk {
+font-size: 30px;
+line-height: 70px;
+color: white;
+display: none;
+float: right;
+padding-right: 20px;
+}
+
+/* 2. Second Break-point */
+
+@media (max-width: 800px) {
+#header {
+width: 100%;
+background-color: grey;
+position: fixed;
+top: 0;
+height: 70px;
+}
+
+.show-btn {
+display: block;
+}
+
+.menu {
+position: fixed;
+top: 0;
+right: -100%;
+width: 100%;
+background-color: #333;
+text-align: center;
+padding: 80px 0px;
+line-height: normal;
+transition: 0.7s;
+}
+
+.menu li {
+display: block;
+}
+
+.manu li a {
+display: block;
+}
+
+#chk:checked~.menu {
+right: 0;
+}
+
+.hide-btn {
+display: block;
+position: absolute;
+right: 20px;
+top: 10px;
+}
+
+.banner {
+width: 100%;
+height: 350px;
+margin-bottom: 15px;
+display: flex;
+font-size: 30px;
+color: white;
+margin-top: 90px;
+}
+#circle-container {
+width: 100%;
+}
+.circle img {
+height: 250px;
+width: 250px;
+border-radius: 50%;
+float: left;
+margin-left: 10%;
+margin-bottom: 20px;
+}
+
+#about {
+width: 100%;
+height: 200px;
+background-color: gray;
+color: #fff;
+margin-bottom: 20px;
+}
+
+.main h2 {
+text-align: left;
+margin: 5px 5px;
+}
+.main p{
+font-size: 20px;
+padding: 10px;
+text-align: justify;
+line-height: 28px;
+}
+
+#right-side {
+width: 100%;
+height: 400px;
+}
+
+.artical {
+height: 31%;
+margin-bottom: 20px;
+background-color: chocolate;
+display: flex;
+justify-content: center;
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+overflow: hidden;
+}
+
+#p1 {
+background-image: url(https://imgur.com/JyMz0CR.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#p2 {
+background-image: url(https://imgur.com/GFLWoXM.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#p3 {
+background-image: url(https://imgur.com/uzmZqZA.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#grid-container {
+width: 100%;
+margin: 15px auto;
+}
+
+#grid-container::after {
+content: '';
+display: block;
+clear: both;
+}
+
+.grid {
+width: 40%;
+float: left;
+margin-left: 50px;
+background-color: lightgrey;
+border-radius: 8px;
+margin-bottom: 20px;
+box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.grid>img {
+width: 100%;
+margin-bottom: 10px;
+}
+
+.grid>h4 {
+margin: 0px 10px;
+text-align: center;
+}
+
+.grid>p {
+margin: 10px;
+font-size: 15px;
+text-align: justify;
+line-height: 25px;
+color: white;
+}
+
+.grid>a {
+display: block;
+margin: 0 auto;
+text-align: center;
+color: #fff;
+background-color: red;
+text-decoration: none;
+padding: 10px;
+border-radius: 8px;
+}
+
+h1 {
+color: black;
+font-size: 40px;
+text-align: center;
+padding: 25px 0px;
+}
+}
+}
+</style>
+<body>
+        <div id="header">
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-btn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#circle-container">Team</a></li>
+                <li><a href="#technologies">Technologies</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <label for="chk" class="hide-btn">
+                    <i class="fa fa-times"></i>
+                </label>
+            </ul>
+        </div>
+        
+        <div class="banner">
+            PRACTICAL 8
+        </div>
+        <div>
+            <a id="circle-container"></a>
+        </div>
+        <div class="heading">
+            
+            <h1>Team Members</h1>
+        </div>
+        <div class="circle">
+            <img src="https://github.com/NandiniAgrawal17/FullStack_Practical/blob/master/image/team1.png?raw=true" alt="team Member">
+        </div>
+        <div class="circle">
+            <img src="https://github.com/NandiniAgrawal17/FullStack_Practical/blob/master/image/team2.png?raw=true" alt="team Member">
+        </div>
+        <div class="circle">
+            <img src="https://github.com/NandiniAgrawal17/FullStack_Practical/blob/master/image/team3.png?raw=true" alt="team Member">
+        </div>
+        <div class="circle">
+            <img src="https://github.com/NandiniAgrawal17/FullStack_Practical/blob/master/image/team4.png?raw=true" alt="team Member">
+        </div>
+        
+        <div class="heading">
+            <a id="about"></a>
+            <h1>About Us</h1>
+            
+        </div>
+        
+        <div class="main">
+            <h2>
+                About Projects</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptate exercitationem recusandae odio
+                veritatis placeat tempore delectus vero repudiandae fuga nemo beatae labore deleniti, aperiam saepe
+                nobis deserunt ducimus alias?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit praesentium atque beatae quibusdam deserunt saepe dolor possimus repellendus, perspiciatis vel ipsa excepturi expedita autem, assumenda nostrum a non ab!
+            </p>
+        </div>
+        <div id="right">
+            <div class="article" id="p1">
+                <h2>Project-1</h2>
+            </div>
+            <div class="article" id="p2">
+                <h2>Project-2</h2>
+            </div>
+            <div class="article" id="p3">
+                <h2>Project-3</h2>
+            </div>
+        </div>
+        
+        <div class="headingtech">
+            
+            <h1>Technologies Used</h1>
+            <a id="technologies"></a>
+            <div class="square">
+                <img src="./image/html.png" alt="HTML">
+                <h4>Introduction to HTML</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+                    illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
+                    recusandae consequuntur!
+                </p>
+                <a href="./HTML.html">Read More</a>
+            </div>
+
+            <div class="square">
+                <img src="./image/css.png" alt="css">
+                <h4>Introduction to CSS</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+                    illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
+                    recusandae consequuntur!</p>
+                <a href="./pages/CSS.html">Read More</a>
+            </div>
+            <div class="square">
+
+                <img src="./image/jquery.png" alt="jquery">
+                <h4>Introduction to Jquery</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+                    illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
+                    recusandae consequuntur!</p>
+                <a href="./pages/Jquery.html">Read More</a>
+            </div>
+            <div class="square">
+                <img src="./image/bootstrap.jpg" alt="bootstrap">
+                <h4>Introduction to Bootsrtap</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit,
+                    illum odio! Aperiam esse quia blanditiis quasi? Cum itaque
+                    recusandae consequuntur!
+                </p>
+                <a href="./pages/Bootsrtap.html">Read More</a>
+
+            </div>
+            <a id="contact"></a>
+            <div class="headingcont">
+                <h1>Contact</h1>
+            </div>
+            
+<div id="footer">
+    <p>"Website Template for Practical-8 ©"
+    <a href="https://beta-labs.in">Beta-labs</a>
+    <br><br><a href="#top">Back to top</a>
+    </p>
+</div>
+    </body>
+
+</html>
